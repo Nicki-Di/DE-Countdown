@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import {Index} from './components/Counter';
+import rocketSvg from './assets/rocket.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <main dir = {"rtl"}>
+            <div className = "container">
+                <h1>آماده بهره‌برداری در </h1>
+
+                <Index/>
+
+                <p>مرکز فناوری دنیای اقتصاد</p>
+
+            </div>
+
+            <img src = {rocketSvg} alt = "" width = {500}/>
+        </main>
+    );
+};
 
 export default App;
