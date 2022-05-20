@@ -1,5 +1,5 @@
 export const calculateTimeLeft = () => {
-    let countDownDate = new Date(2022, 5, 20).getTime();
+    let countDownDate = new Date(2022, 5, 22).getTime();
     let now = new Date().getTime();
     let distance = countDownDate - now;
 
